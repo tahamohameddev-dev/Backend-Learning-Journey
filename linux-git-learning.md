@@ -56,3 +56,8 @@
 * `git reset <file-name>` : Unstages a file but keeps your code changes safe.
 * `git reset HEAD~1` : Undoes the last commit and brings files back to the staging area.
 * `git reset --hard <commit-id>` : Reverts the entire project to a specific commit and deletes all changes after it.
+
+## Syncing Remote Changes
+* `git fetch` : Downloads new changes from GitHub but does not merge them into your code.
+* `git pull` : Downloads new changes from GitHub and merges them into your code immediately.
+* `git pull origin main --rebase` : Fetches changes from GitHub and puts your local commits on top of them to avoid conflicts..
