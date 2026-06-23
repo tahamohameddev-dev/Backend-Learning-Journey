@@ -22,3 +22,4 @@ vip_users.append(new_name)
 
 vip_users.insert(1, "Hacker")
 print(vip_users)
+
