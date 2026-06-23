@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 name = input("Enter your name: ")
 print("your name is ", name.upper())
@@ -22,3 +23,12 @@ vip_users.append(new_name)
 
 vip_users.insert(1, "Hacker")
 print(vip_users)
+=======
+print("hello world")
+
+
+
+phrase = "Taha Mohamed"
+
+print(phrase.lower())
+>>>>>>> test-python
