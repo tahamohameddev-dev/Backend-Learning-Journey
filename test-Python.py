@@ -1,25 +1,24 @@
 
-name = input("Enter your name: ")
-print("your name is ", name.upper())
-print(name.title())
-print(len(name))
 
 
 
-package_price = input("Enter package price: ")
-Discount = input("Enter Discount: ")
 
-Calculation = int(package_price) - int(Discount)
+# BETTER CALCULATOR
+num1 = float(input("Enter Number: "))
+op = input("Select an icon>> (+, -, *,/): ")
+num2 = float(input("Enter Numper: "))
+def Calculator(num1, op, num2):
+    if op == "+":
+        return num1 + num2
+    elif op == "-":
+        return num1 - num2
+    elif op == "*":
+        return num1 * num2
+    elif op == "/":
+        return num1 / num2
+    else:
+        return "Error Select an icon>> (+, -, *,/): "
 
-print(f"prise after descount ", {Calculation})
+Calculation = Calculator(num1, op, num2)
 
-print( "your num: " , {min(50, Calculation)})
-
-
-vip_users = ["Ahmed", "Saeed"]
-new_name = input("Enter your name: ")
-vip_users.append(new_name)
-
-vip_users.insert(1, "Hacker")
-print(vip_users)
-
+print(Calculation)

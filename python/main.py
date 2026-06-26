@@ -85,3 +85,68 @@ print(skills2)
 
 # Tuples
 
+user = [("ahmed", 25), ("sara", 30), ("ali", 22)]
+
+# ####################################
+# 0.6 FUNCTIONS & RETURN STATEMENT
+# ####################################
+
+def say_hi(name, age):
+    print("hello " + name + ", you are age " + str(age))
+
+say_hi("Tom", 19)
+
+# RETURN STATEMENT
+
+
+def cube(num):
+    return num*num*num
+
+print(cube(3))
+
+# ####################################################
+# 0.7 IF STATEMENTS & COMPARISONS & BETTER CALCULATOR
+# ####################################################
+
+age = 18
+is_Developer = True 
+
+if age >= 18 and is_Developer:
+    print("Welcome to the Backend world, Tom!")
+else:
+    print("Keep learning!")
+
+# Comparisons
+
+def max_num(num1, num2, num3):
+    if num1 >= num2 and num1 >= num3:
+        return num1
+    elif num2 >= num1 and num2 >= num3:
+        return num2
+    else:
+        return num3
+Calculations = max_num(6, 8, 6)
+
+print(Calculations)
+
+# BETTER CALCULATOR
+
+num1 = float(input("Enter Number: "))
+op = input("Select an icon>> (+, -, *,/): ")
+num2 = float(input("Enter Numper: "))
+def Calculator(num1, op, num2):
+    if op == "+":
+        return num1 + num2
+    elif op == "-":
+        return num1 - num2
+    elif op == "*":
+        return num1 * num2
+    elif op == "/":
+        return num1 / num2
+    else:
+        return "Error Select an icon>> (+, -, *,/): "
+
+Calculation = Calculator(num1, op, num2)
+
+print(Calculation)
+
