@@ -150,3 +150,66 @@ Calculation = Calculator(num1, op, num2)
 
 print(Calculation)
 
+
+# ####################################
+# 0.8 Dictionaries
+# ####################################
+
+months_dict = {
+    "jan": "January",
+    "feb": "February",
+    "mar": "March",
+    "apr": "April",
+    "may": "May",
+    "jun": "June",
+    "jul": "July",
+    "aug": "August",
+    "sep": "September",
+    "oct": "October",
+    "nov": "November",
+    "dec": "December"
+}
+
+print(months_dict["nov"])
+
+
+# ####################################
+# 0.9 WHILE LOOP & WHILE LOOP CALCULATOR
+# ####################################
+
+# WHILE LOOP
+
+i = 1
+while i <= 10:
+    print(i)
+    i = i +1
+
+# WHILE LOOP CALCULATOR
+
+def Calculator(num1, op, num2):
+    if op == "+":
+        return num1 + num2
+    elif op == "-":
+        return num1 - num2
+    elif op == "*":
+        return num1 * num2
+    elif op == "/":
+        return num1 / num2
+    else:
+        return "Error Select an icon>> (+, -, *,/): "
+
+user_choice = "y"
+while user_choice == "y":
+    
+    num1 = float(input("Enter Number: "))
+    op = input("Select an icon>> (+, -, *,/): ")
+    num2 = float(input("Enter Numper: "))
+
+    Calculation = Calculator(num1, op, num2)
+    print(Calculation)
+    user_choice = input("Do you need continuation (y/n): ").lower()
+    print("-"* 20)
+
+print("Goodbye!")
+
+
